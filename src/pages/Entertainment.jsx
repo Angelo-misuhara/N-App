@@ -19,7 +19,7 @@ const Entertainment = () => {
       <Title title={title}/>
       <div className="grid grid-cols-3 gap-4 px-3 mt-3" id="mainPage">
         {data.map((news) => (
-          <div key={uuidv4()}>
+          <div key={uuidv4()} className="border rounded p-3">
             <a href={news.url} target="_blank" rel="noopener noreferrer">
               <img src={news.multimedia[1].url} alt="" className="rounded" />
               <div className="mt-2">
