@@ -36,7 +36,7 @@ const Navbar = () => {
         {/* PcView */}
       <div className='flex p-2 pt-2 flex-row justify-between px-9 bg-gray-600 flex-wrap' id='pcNav'>
         <div className="mt-1">
-          <img src="img/icon32px.png" alt="icon" />
+          <img src="/img/icon32px.png" alt="icon" />
         </div>
         <div className='flex flex-row  gap-11 mt-2'>
           {Links.map((link) => 
