@@ -1,0 +1,30 @@
+@media screen and (max-width: 898px) {
+  #pcNav {
+    display: none;
+  }
+  #phoneView {
+    display: flex;
+  }
+  #burgerMenu {
+    display: flex;
+    flex-direction: column;
+    transition-delay: 2s;
+  }
+  #mainPage{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap ;
+  }
+  #title{
+    font-size: 2rem;
+  }
+  #footerCContaioner{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  #svfs{
+    display: flex;
+    justify-content: center;
+  }
+}
