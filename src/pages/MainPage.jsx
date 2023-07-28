@@ -3,13 +3,13 @@ import { v4 as uuidv4 } from 'uuid';
 import Title from "../components/Title";
 
 const MainPage = () => {
-  
+ 
   const [data, setData] = useState([])
   const title='World'
   //aYb56ITjv91AN1rvIAaWG8aytM3dOFmK
   
   useEffect(() => {
-    fetch('https://api.nytimes.com/svc/topstories/v2/world.json?api-key=aYb56ITjv91AN1rvIAaWG8aytM3dOFmK')
+    fetch('https://api.nytimes.com/svc/topstories/v2/us.json?api-key=aYb56ITjv91AN1rvIAaWG8aytM3dOFmK')
       .then((res) => res.json())
       .then((Data) => setData(Data.results))
   }, [])

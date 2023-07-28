@@ -1,8 +1,20 @@
+import { useEffect, useState } from "react";
 
 const Footer = () => {
+  const [showFooter, setShowFooter] = useState(false);
+  
+  useEffect(() => {
+    // Wait for 3 seconds and then show the footer
+    const timer = setTimeout(() => {
+      setShowFooter(true);
+    }, 2000);
+
+    // Clean up the timer on component unmount
+    return () => clearTimeout(timer);
+  }, []);
   return (
     <>
-      <div>
+      {showFooter &&  <div>
         <div className="flex flex-row p-4 mt-3 bottom-0 bg-gray-800 w-full justify-between" id="footerCContaioner">
             <div className="">
               <p className="text-sm text-gray-500 sm:ml-4 sm:pl-4  sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© Yocor,Angelo —
@@ -36,7 +48,7 @@ const Footer = () => {
                 </span>
           </div>
         </div>
-      </div>
+      </div>}
     </>
   )
 }
