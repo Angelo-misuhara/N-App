@@ -14,8 +14,8 @@ const AppRoutes = () => {
   
   return (
     <Routes>
-      <Route path='/' element={<MainPage />} />
-      <Route path='/Food' element={<Food />} />
+      <Route path='/' element={<Food />} />
+      <Route path='/Food' element={<MainPage />} />
       <Route path='/Politics' element={<Politics />} />
       <Route path='/Entertainment' element={<Entertainment />} />
       <Route path='/Sport' element={<Sport />} />
