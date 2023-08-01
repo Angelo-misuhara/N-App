@@ -7,7 +7,7 @@ const Navbar = () => {
   const [openBurger,setOpenburger] = useState(false)
   const Links = [
     {
-      link: '/Food',
+      link: '/',
       name: 'Food'
     },
     {
