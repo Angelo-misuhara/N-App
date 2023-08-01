@@ -18,14 +18,6 @@ const Navbar = () => {
       link: '/Entertainment',
       name: 'Fashion'
     },
-    {
-      link: '/Sport',
-      name: 'Sports'
-    },
-    {
-      link: '/',
-      name: 'World'
-    },
   ]
 
   const openBurg = () => {
